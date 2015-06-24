@@ -15,6 +15,6 @@ class TestController extends BaseController
 
 	public function actionIndex()
 	{
-		echo 'hello';
+		$this->render('index');
 	}
 }

@@ -6,6 +6,6 @@ class UpdateAction extends CAction
 	
 	public function run()
     {
-        echo __FUNCTION__;
+       echo 'hello';
     }
 }

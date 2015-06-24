@@ -50,7 +50,7 @@
 <body>
 <div class="container">
 
-    <form class="form-signin" method="post" action="<?=$this->createUrl('',array('id'=>1));?>">
+    <form class="form-signin" method="post" action="<?=$this->createUrl('');?>">
         <h2 class="form-signin-heading">登录系统</h2>
         <input type="text" name="username"  id="username" class="input-block-level" placeholder="账号">
         <input type="password" name="passwd" id="pawd" class="input-block-level" placeholder="密码">

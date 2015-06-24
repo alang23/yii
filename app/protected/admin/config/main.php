@@ -26,15 +26,25 @@ return array(
 
 	// application components
 	'components'=>array(
+		/*
 		'db'=>array(
 			'connectionString'=>'sqlite:protected/data/phonebook.db',
+		),
+		*/
+		//数据库配置
+		'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=myyii',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '',
+			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
 		),
 
 		'cache'=>array(
             'class'=>'CMemCache',
             'servers'=>array(
                 array('host'=>'127.0.0.1', 'port'=>11211, 'weight'=>60),
-                //array('host'=>'server2', 'port'=>11211, 'weight'=>40),
             ),
         ),
 	),
